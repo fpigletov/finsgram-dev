@@ -1,0 +1,63 @@
+.news
+
+  &__title
+    text-align: center
+
+  &__subtitle
+    max-width: 900px
+    display: block
+    margin: 0 auto 50px auto
+    text-align: center
+    line-height: 130%
+    span
+      color: var(--dark-yellow)
+    @media (max-width: 480px)
+      margin-bottom: 20px
+
+  &__body
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    gap: 30px    
+    @media (max-width: 992px)
+
+  &__item
+    position: relative
+    flex: 0 0 calc(50% - 15px)
+    border-radius: 30px
+    z-index: 2 
+    img
+      border-radius: 30px
+    @media (max-width: 768px)
+      flex: 1 1 100%
+
+  &__ellipse
+    position: absolute
+    @media (max-width: 768px)
+      display: none
+
+    &--1
+      top: -100px
+      left: -230px
+      width: 463px
+      height: 516px
+
+    &--2
+      bottom: -160px
+      right: -200px
+      width: 618px
+      height: 580px
+      transform: rotate(-90deg)
+
+  &__cup
+    position: absolute
+    bottom: -81px
+    left: -220px
+    width: 531px
+    height: 531px
+    background: url('../img/news/cup-bg.png') center/cover no-repeat
+    @media (max-width: 992px)
+      display: none
+

@@ -1,0 +1,73 @@
+.about 
+
+  &__body
+    position: relative
+    background-color: var(--main-blue)
+    padding: 50px
+    border-radius: 20px  
+    @media (max-width: 992px)
+      display: flex
+      flex-direction: column
+      align-items: center
+    @media (max-width: 768px)
+      padding: 20px
+    @media (max-width: 768px)
+      padding: 15px
+
+  &__top
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 50px
+    margin-bottom: 50px
+    @media (max-width: 992px)
+      grid-template-columns: 1fr
+    @media (max-width: 480px)
+      margin-bottom: 25px
+      gap: 25px
+
+  &__title
+    max-width: 420px
+    @media (max-width: 992px)
+      max-width: 100%
+      text-align: center
+    span
+      display: block 
+      @media (max-width: 992px)
+        display: inline
+  
+  &__bottom
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 50px
+    @media (max-width: 992px)
+      grid-template-columns: 1fr
+      gap: 20px
+    @media (max-width: 480px)
+      gap: 10px    
+
+  &__ruble
+    position: absolute
+    bottom: -80px
+    right: -98px
+    width: 207px
+    height: 207px
+    @media (max-width: 768px)
+      display: none
+
+  &__star
+    position: absolute   
+    @media (max-width: 768px)
+      display: none 
+
+    &--gold
+      bottom: -36px
+      left: -38px
+      width: 98px
+      height: 98px
+
+    &--white
+      top: -30px
+      right: -30px
+      width: 82px
+      height: 82px
+

@@ -1,0 +1,78 @@
+.why   
+
+  &__title
+    max-width: 440px
+    text-align: center
+
+  &__content
+    position: relative 
+
+  &__ellipse
+    position: absolute
+    bottom: -187px
+    right: -167px
+    z-index: 1
+    @media (max-width: 992px)
+      display: none
+
+  &__body
+    position: relative
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 15px
+    margin-bottom: 50px
+    z-index: 2
+    @media (max-width: 992px)
+      grid-template-columns: 1fr
+    @media (max-width: 480px)
+      gap: 10px
+      margin-bottom: 25px
+
+  &__item
+    height: 100%
+    display: flex
+    flex-direction: column
+    background-color: var(--main-purple)
+    border-radius: 30px
+    padding: 30px
+    @media (max-width: 480px)
+      padding: 20px
+
+  &__bottom
+    display: flex
+    justify-content: center
+    
+.why-item
+
+  &__top
+    flex: 0 1 141px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 30px
+    @media (max-width: 480px)
+      flex-direction: column-reverse
+      align-items: center
+      margin-bottom: 20px
+
+  &__title
+    max-width: 250px
+    @media (max-width: 480px)
+      max-width: 100%
+      text-align: center    
+
+  &__img
+    flex: 0 0 120px
+    height: 120px
+    @media (max-width: 480px)
+      margin-bottom: 15px
+
+
+  &__descr
+    flex: 1 1 auto
+    line-height: 160%
+    letter-spacing: 0.5px
+
+
+
+

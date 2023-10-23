@@ -1,0 +1,70 @@
+.organizer
+
+  &__title
+    text-align: center
+    max-width: 550px
+
+  &__body
+    background: url('../img/organizer/map.png') left/50% 100% no-repeat
+    @media (max-width: 1300px)
+      background-position: 0px 0px
+      background-size: 50%
+    @media (max-width: 768px)
+      background-size: 100%
+
+  &__wrapper
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 50px
+    @media (max-width: 768px)
+      flex-direction: column    
+
+  &__content
+    flex: 0 0 50%
+    @media (max-width: 768px)
+      margin-top: 50%
+
+  &__text
+    color: var(--light-gray)
+    &:not(&:last-child)
+      margin-bottom: 20px
+    span
+      color: var(--dark-yellow)  
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    gap: 10px
+
+  &__item
+    position: relative
+    padding: 40px 
+    background-color: var(--main-blue)
+    border-radius: 30px
+    @media (max-width: 480px)
+      padding: 20px
+
+.organizer-item
+
+  &__top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 20px
+
+  &__num
+    font-size: 72px
+    font-weight: 700
+    letter-spacing: -3px
+    @media (max-width: 992px)
+      font-size: 64px
+    @media (max-width: 480px)
+      font-size: 42px
+
+  &__img    
+    width: 56px
+    height: 56px
+    @media (max-width: 480px)
+      width: 36px
+      height: 36px
+

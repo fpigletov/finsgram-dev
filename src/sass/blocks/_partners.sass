@@ -1,0 +1,74 @@
+.partners
+
+  &__top
+    position: relative  
+
+  &__title
+    text-align: center
+
+  &__star
+    position: absolute
+    top: 15px
+    left: 0
+    width: 130px
+    height: 130px
+    @media (max-width: 992px)
+      display: none
+
+  &__list
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+    gap: 10px
+    margin-bottom: 50px
+
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 135px
+    background-color: var(--main-white)
+    border-radius: 30px
+
+  &__mail
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    background-color: var(--main-purple)
+    border-radius: 30px
+    padding: 35px 50px  
+    @media (max-width: 480px)
+      padding: 20px 
+
+  &__text
+    flex: 0 0 50%
+    font-size: 20px
+    line-height: 150%
+    letter-spacing: 0.5px
+    @media (max-width: 992px)
+      flex: 0 0 100%
+    @media (max-width: 480px)
+      font-size: 16px
+    line-height: 130%
+
+  &__link
+    color: var(--main-yellow)
+    transition: color 0.3s ease 
+    @media (any-hover: hover)
+      &:hover
+        color: var(--dark-yellow)    
+
+  &__plane
+    position: absolute
+    width: 180px
+    height: 160px
+    bottom: -25%
+    right: 30px
+    @media (max-width: 992px)
+      width: 120px
+      height: 100px
+      bottom: -60px
+      right: -5px
+      
+    
+
